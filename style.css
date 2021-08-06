@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:#fff;
+    font-family:'Hind Siliguri',sans-serif;
+    margin: 0;
+}
+header {
+    background-image: url('images/bgImage.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    color: white;
+    min-height: calc(100vh-100px);
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+header .mid-content {
+    font-size: 1.2rem;
+    margin-top: 300px;
+    margin-left: 20px;
+    max-width: 100%;
+}
+header .mid-content h1 {
+    color:#00c2ff;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+nav .logo {
+    font-size: 1.5rem;
+   
+
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+.selected {
+    font-weight: bold;
+}
+.highlight {
+    background-color: #00c2ff;
+    color: white;
+    text-decoration: none;
+}
+footer {
+    
+    background-color:black;
+    color: white;
+    padding: 1rem;
+}
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+footer strong {
+    color:#00c2ff;
+}
+
+@media screen and ( max-width: 700px) {
+    .mid-content {
+        font-size: 0.8rem;
+        margin: 2rem auto 0;
+
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    nav .highlight {
+        display: none;
+    }
+    footer ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer li {
+        
+        text-align: center;
+    }
+    nav li a {
+        font-weight: bold;
+        padding: auto
+        ;
+    }
+
+}
